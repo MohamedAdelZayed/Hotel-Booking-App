@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+    font-family: Outfit;
+}
+
+.font-playFair{
+    font-family: playfair !important ;
+}
+
+.active{
+  border-right: 4px solid #2563eb; /* Tailwind's blue-600 */
+  background-color: rgba(37, 99, 235, 0.1); /* blue-600 with 10% opacity */
+  color: #2563eb;
+}
