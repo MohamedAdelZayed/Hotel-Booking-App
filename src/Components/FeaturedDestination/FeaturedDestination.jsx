@@ -1,12 +1,13 @@
 import { roomsDummyData } from "../../assets/assets";
 import HotelCard from "../HotelCard/HotelCard";
 import Title from "../Title/Title";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from 'framer-motion';
-// import { motion } from 'framer-motion';
 
 
 export default function FeaturedDestination() {
+
+    const nav = useNavigate()
 
  return (
 
@@ -51,7 +52,11 @@ export default function FeaturedDestination() {
         </div>
 
 
-        <div className = "flex justify-center my-16 ">
+        <div
+        
+        onClick = { ()=> nav('/hotels') }
+
+        className = "flex justify-center my-16 ">
             <button className = "px-4 py-2 bg-[#15a3fc] hover:bg-white rounded-full text-white hover:text-[#15a3fc] transition-all duration-900  cursor-pointer  font-medium border border-[#15a3fc]   " >View All Destinations</button>
         </div>
 

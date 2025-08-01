@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import { assets, facilityIcons, roomsDummyData } from "../../assets/assets";
 import Stars from "../Stars/Stars";
 import Title from "../Title/Title";
@@ -81,6 +81,13 @@ export default function Hotels() {
       "Price High To Low",
       "Newest First",
     ];
+
+    
+    useEffect( ()=>{
+  
+      window.scrollTo({ top : 0 })
+  
+  } , [])
 
     
  return (

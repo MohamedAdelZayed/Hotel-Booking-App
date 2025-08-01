@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import {  useEffect, useState } from "react";
 import { ExploreCities } from "../../assets/assets";
 import Title from "../Title/Title";
 
@@ -21,6 +21,13 @@ export default function Explore() {
   const handleLeave = () => {
     setTilt({ x: 0, y: 0 });
   };
+
+
+  useEffect( ()=>{
+    
+      window.scrollTo({ top : 0 })
+    
+  } , [])
 
 
  return (
