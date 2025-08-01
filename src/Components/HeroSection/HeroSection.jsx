@@ -46,7 +46,8 @@ export default function HeroSection() {
        viewport={{ once : true }}
      
 
-     className = { `z-50 md:px-8 lg:px-0 xl:px-0 ${isScrolled ? 'py-12 md:py-0' : ''}` } >
+     className={`z-50 py-10 sm:py-12 md:py-16 lg:py-20 ${isScrolled ? 'md:py-0' : ''}`}
+     >
 
         <p className = " font-playFair w-fit bg-[#49B9FF]/60 px-4 rounded-full py-1 font-bold mt-17  text-white  ">The Ultimate Hotel Experience</p>
 
