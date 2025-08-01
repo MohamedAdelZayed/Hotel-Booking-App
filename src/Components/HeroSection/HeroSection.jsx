@@ -1,8 +1,27 @@
+import { useEffect, useState } from "react";
 import { assets, cities } from "../../assets/assets";
 import { motion } from 'framer-motion';
 
 
 export default function HeroSection() {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+    
+     useEffect(() => {
+     
+    const handleScroll = () => {
+     setIsScrolled(window.scrollY > 10);
+     };
+
+     handleScroll(); // check on load
+     window.addEventListener('scroll', handleScroll);
+
+     return () => {
+       window.removeEventListener('scroll', handleScroll);
+     };
+
+     }, []);
+
 
  return (
 
@@ -27,7 +46,7 @@ export default function HeroSection() {
        viewport={{ once : true }}
      
 
-     className = "z-50  md:px-8 lg:px-0 xl:px-0 ">
+     className = { `z-50 md:px-8 lg:px-0 xl:px-0 ${isScrolled ? 'py-12 md:py-0' : ''}` } >
 
         <p className = " font-playFair w-fit bg-[#49B9FF]/60 px-4 rounded-full py-1 font-bold mt-17  text-white  ">The Ultimate Hotel Experience</p>
 

@@ -107,7 +107,7 @@
 
                                 <UserButton.Action
                                 
-                                onClick = {()=> nav('/myBookings') }
+                                onClick = { ()=> nav('/myBookings') }
                                 
                                 label = "My Booking" labelIcon = { <img src = {assets.calenderIcon} alt = "calenderIcon" ></img> } > 
                                 
@@ -154,7 +154,7 @@
 
                         {navLinks.map((link, i) => (
 
-                            <Link key={i} href={link.path} onClick={() => setIsMenuOpen(false)}>
+                            <Link key={i} to = {link.path} onClick={() => setIsMenuOpen(false)}>
                                 {link.name}
                             </Link>
                         
@@ -177,13 +177,14 @@
                         }
 
 
+
                         {
 
                         user ?
 
                         <div className = "relative">
 
-                        <UserButton 
+                        <UserButton
                         
                         appearance={{
                          elements: {
@@ -191,20 +192,30 @@
                          }
                         
                         }}
-
                         
                         >
 
                             <UserButton.MenuItems>
 
-                                <UserButton.Action label = "My Booking" labelIcon = { <img src = {assets.calenderIcon} ></img> } > </UserButton.Action>
+                                <UserButton.Action
+                                
+                                onClick = {()=>{
+                                    
+                                    nav('/myBookings');
+
+                                    setIsMenuOpen(false);
+                                
+                                } }
+                                
+                                label = "My Booking" labelIcon = { <img src = {assets.calenderIcon} alt = "calenderIcon" ></img> } > 
+                                
+                                </UserButton.Action>
 
                             </UserButton.MenuItems>
 
                         </UserButton>
 
                         </div>
-
 
                         :
 
