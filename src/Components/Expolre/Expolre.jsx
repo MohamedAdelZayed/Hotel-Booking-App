@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { ExploreCities } from "../../assets/assets";
 import Title from "../Title/Title";
 
@@ -23,26 +23,17 @@ export default function Explore() {
   };
 
 
-
-
-  // useEffect( ()=> {
-  
-  //         window.scrollTo({ top: 20 })
-  
-  // } , [] )
-
-
  return (
 
     <>
     
-    <div className="px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-28 bg-gray-50 text-center mt-12" >
+    <div className="px-6 md:px-16 lg:px-24 xl:px-32 pt-14 pb-28 bg-gray-50 text-center mt-12" >
 
         <Title align = {'center'}  heading = {'Top Cities to Stay'} description = {'Handpicked destinations for luxury stays, exclusive experiences, and unforgettable trips.'} />
         
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-        
+
         {ExploreCities.map((city, index) => (
         
         <div

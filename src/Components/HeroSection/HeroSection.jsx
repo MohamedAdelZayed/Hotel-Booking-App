@@ -1,16 +1,8 @@
-// import { useEffect } from "react";
 import { assets, cities } from "../../assets/assets";
 import { motion } from 'framer-motion';
 
 
 export default function HeroSection() {
-
-
-    // useEffect( ()=> {
-    
-    //         window.scrollTo({ top: 0 })
-    
-    // } , [] )
 
  return (
 

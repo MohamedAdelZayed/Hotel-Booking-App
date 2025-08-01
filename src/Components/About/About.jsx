@@ -1,17 +1,9 @@
-// import { useEffect } from "react";
 
 export default function About() {
 
-
-  // useEffect( ()=> {
-  
-  //         window.scrollTo({ top: 20 })
-  
-  // } , [] )
-
  return (
 
-    <div className="px-6 md:px-16 lg:px-24 xl:px-32 pt-20 pb-10 overflow-hidden">
+    <div className=" px-6 md:px-16 lg:px-24 xl:px-32 pt-16 pb-10 overflow-hidden">
      
       {/* About Us Section */}
       <section className="my-10">

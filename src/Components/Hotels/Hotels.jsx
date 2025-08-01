@@ -82,22 +82,12 @@ export default function Hotels() {
       "Newest First",
     ];
 
-
-
-    // useEffect( ()=> {
-    
-    //         window.scrollTo({ top: 20 })
-    
-    // } , [] )
-
-
-
     
  return (
 
     <>
 
-    <div className = "py-28 md:py-35 px-4 md:px-16 lg:px-24 xl:px-32">
+    <div className = "py-25  px-4 md:px-16 lg:px-24 xl:px-32">
 
         <Title align = {'left'}  heading = {'Hotel Rooms'} description = {'Take advantage of our limited-time offers and special packages to enhance your stay and create unforgettable memories.'} />
 
