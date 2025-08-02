@@ -8,17 +8,16 @@ export default function Newsletter() {
 
      <div className = "overflow-hidden">
 
-    <motion.div 
-    
-       initial = {{ opacity : 0 , x : -100  }}
+    <div className  = "  p-1 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-25 pb-24 overflow-hidden w-full" >
+
+      <motion.div
+      
+      initial = {{ opacity : 0 , x : -100  }}
        whileInView = {{ opacity : 1 , x : 0  }}
        transition = {{ duration : 2.3  }}
        viewport={{ once : true }}
 
-    
-    className  = "px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 pt-25 pb-24 overflow-hidden w-full" >
-
-      <div className="flex flex-col items-center w-full max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-auto bg-gray-900 text-white">
+      className="flex flex-col items-center w-full max-w-5xl lg:w-full rounded-2xl px-4 py-12 md:py-16 mx-auto bg-gray-900 text-white">
 
     <div className="flex flex-col justify-center items-center text-center">
 
@@ -51,9 +50,9 @@ export default function Newsletter() {
       By subscribing, you agree to our Privacy Policy and consent to receive updates.
     </p>
 
-  </div>
+  </motion.div>
 
-    </motion.div>
+    </div>
 
     </div>
 
