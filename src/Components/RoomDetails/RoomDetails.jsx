@@ -26,20 +26,20 @@ export default function RoomDetails() {
         // Clear Fields of form at once  مره واحده علطول
         formRef.current.reset()
     }
-
-
-    useEffect( ()=> {
-
-        window.scrollTo({ top: 20 })
-
-    } , [] )
+   
     
+    useEffect( ()=>{
+  
+      window.scrollTo({ top : 0 })
+  
+    } , [])
+
 
  return (
 
     <>
      
-     <div className = "py-28 md:py-35 px-4 md:px-16 lg:px-24 xl:px-32" >
+     <div className = "py-28 px-4 md:px-16 lg:px-24 xl:px-32" >
 
         {
 
