@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { assets, cities } from "../../assets/assets";
 import { motion } from 'framer-motion';
 
 
 export default function HeroSection() {
+
+
+     const formRef = useRef(null)
 
     const [isScrolled, setIsScrolled] = useState(false);
     
@@ -56,7 +59,12 @@ export default function HeroSection() {
         <p className = "  font-playFair mt-2.5 px-1 sm:px-1.5 max-w-130 text-lg text-white leading-6" > Unparalleled luxury and comfort await at the world's most exclusive hotels and resorts. Start your journey today. </p>
 
 
-        <form className='bg-white mt-8 text-gray-500 rounded-lg px-6 py-4  flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
+        <form  ref = {formRef}  onSubmit = { (e)=> {
+            e.preventDefault();
+            formRef.current.reset();
+        } } 
+        
+        className='bg-white mt-8 text-gray-500 rounded-lg px-6 py-4  flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
 
             <div className=" w-full" >
          
