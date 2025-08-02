@@ -12,7 +12,7 @@ export default function Newsletter() {
     
        initial = {{ opacity : 0 , x : -100  }}
        whileInView = {{ opacity : 1 , x : 0  }}
-       transition = {{ duration : 2  }}
+       transition = {{ duration : 2.3  }}
        viewport={{ once : true }}
 
     
