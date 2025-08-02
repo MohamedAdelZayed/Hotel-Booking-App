@@ -125,11 +125,12 @@ export default function HeroSection() {
             <div className="w-full md:w-auto flex justify-center md:items-end">
   <button
     type="submit"
-    className=" cursor-pointer w-full md:w-auto flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 text-sm md:text-base shadow-sm transition-all duration-200 ease-in-out active:scale-95"
+    className="cursor-pointer w-full md:w-auto flex items-center justify-center gap-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 text-sm md:text-base shadow-sm transition-all duration-200 ease-in-out active:scale-95"
   >
-    Book
+    Search
   </button>
 </div>
+
 
 
         
