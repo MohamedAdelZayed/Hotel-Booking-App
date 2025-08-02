@@ -105,6 +105,9 @@ export default function Hotels() {
             <div className = "flex flex-col gap-6 flex-1 ">
 
                 {
+
+                    filteredData.length > 0 ?
+
                     filteredData.map( (room , index)=> {
                         return(
                             <>
@@ -175,6 +178,13 @@ export default function Hotels() {
             </>
                         )
                     } )
+
+                    :
+
+                    <h2 className="text-center text-gray-500 font-semibold text-xl py-10">
+                     No rooms available Now based on selected filters.
+                    </h2>
+
                 }
 
             </div>
