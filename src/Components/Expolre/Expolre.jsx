@@ -53,8 +53,11 @@ export default function Explore() {
             }}
           >
         
-            <img
+            <img 
               src={city.image}
+
+              loading="lazy"
+
               alt={city.name}
               className="w-full h-52 object-cover"
             />
