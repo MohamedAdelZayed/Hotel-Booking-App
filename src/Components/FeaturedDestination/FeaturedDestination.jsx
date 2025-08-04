@@ -18,7 +18,7 @@ export default function FeaturedDestination() {
     
     <motion.div 
 
-       initial = {{ opacity : 0 , x : 100  }}
+       initial = {{ opacity : 0 , x : 190  }}
        whileInView = {{ opacity : 1 , x : 0  }}
        transition = {{ duration : 1.7  }}
        viewport={{ once : true }}
@@ -36,7 +36,7 @@ export default function FeaturedDestination() {
                     return(
                         <>
                         
-                        <Link to = {`/rooms/${room._id}`}  >
+                        <Link to = {`/rooms/${room._id}`}  key={room._id} >
 
                         <HotelCard room = {room}   />
 
